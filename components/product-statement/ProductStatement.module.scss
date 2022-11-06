@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.productStatement{
+    display: flex;
+    justify-content: center;
+    .productDefn{
+        font-size: 2rem;
+        font-weight: 400;
+        width: 70%;
+    }
+}

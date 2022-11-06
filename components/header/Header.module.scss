@@ -1,5 +1,36 @@
 @import "../../styles/colors.scss";
 
-.logo{
-    color: $theme-font-primary;
+.header{
+    display: flex;
+    // justify-content: center;
+    margin: 1rem 1rem 2rem 1rem;
+    .text-logo{
+        font-weight: 600;
+        font-size: 4rem;
+    }
+}
+
+.navbar{
+    display: flex;
+        align-items: center;
+        width: 100%;
+    .sidebar{
+        @media (min-width:768px) {
+            display: none;
+        } 
+    }
+    .horizontalbar{
+        @media (max-width:768px) {
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    &>li{
+        list-style: none;
+        &.active{
+            text-decoration: underline;
+        }
+    }}
 }
